@@ -1,0 +1,8 @@
+<resources>
+    <color name="colorPrimary">#4A312A</color>
+    <color name="colorPrimaryDark">#2F1D1A</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="main_textView">#fff</color>
+
+
+</resources>

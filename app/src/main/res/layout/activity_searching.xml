@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searching"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:id="@+id/wholeLayout"
+        >
+    <TextView
+        style="@style/list_item_title"
+        android:text="Search by tag"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:inputType="textAutoComplete"
+
+        />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/list_item_title"
+            android:hint="ex: Trumb"
+            android:textStyle="normal"
+            android:id="@+id/tags"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_back_brown"
+            android:id="@+id/button"
+            android:onClick="search"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progress_circular_search"
+            android:visibility="gone"
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_search"
+            android:drawSelectorOnTop="true"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Internet"
+        android:singleLine="false"
+        android:id="@+id/noIntenet"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>
